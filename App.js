@@ -20,8 +20,8 @@ const store = createStore(reducer, middleware);
 export default function App(props) {
   const [isLoadingComplete, setLoadingComplete] = useState(false);
 
+  setLocalNotification();
   if (!isLoadingComplete && !props.skipLoadingScreen) {
-    setLocalNotification();
     return (
       <AppLoading
         startAsync={loadResourcesAsync}

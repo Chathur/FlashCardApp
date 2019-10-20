@@ -13,10 +13,10 @@ class DeckMain extends Component {
         headerLeft: (
             <Icon
                   name="arrow-left"
-                  size={15}
+                  size={25}
                   color={white}
                   onPress={() => navigation.navigate('Decks')}
-                  style={{paddingLeft: 15}}
+                  style={{paddingLeft: 25}}
                 />
           ),
       // navigation.geParam('paramName', 'defaultValue')

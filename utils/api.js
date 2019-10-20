@@ -142,7 +142,7 @@ export function setLocalNotification () {
               tomorrow.setMinutes(0)
 
               Notifications.scheduleLocalNotificationAsync(
-                createNotification(),
+                createNotification('අඩෝ', 'ඇප් එක බලපිය!'),
                 {
                   time: tomorrow,
                   repeat: 'day',
